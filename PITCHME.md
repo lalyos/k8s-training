@@ -3,108 +3,16 @@
 ##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
 
 ---
-@title[Theme Switcher]
-
-## Slideshow Theme Switcher
-<span style="font-size:0.6em; color:gray">Available inside burger-menu.</span> |
-<span style="font-size:0.6em; color:gray">Start switching themes right now!</span>
-
----
-@title[Go Fullscreen]
-
-## Tip!
-For the *best viewing experience*   
-press **F** key to go fullscreen.
-
----
-
-## Markdown Slides
-<span style="font-size:0.6em; color:gray">Press Down key for details.</span> |
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown) for details.</span>
-
-@fa[arrow-down]
-
-+++
-@title[GFM]
-
-#### Use GitHub Flavored Markdown
-#### For Slide Content Creation
-
-<br>
-
-The *same syntax* you use to create project   
-**READMEs** and **Wikis** for your Git repos.
-
----
 
 ## Code Presenting
 ## Repo Source Files
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting) for details.</span>
 
-@fa[arrow-down]
++++?code=pod.yaml&lang=yaml&title=Source: Manifest
 
-+++?code=src/go/server.go&lang=golang&title=Source: Golang File
-
-@[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
-
----
-@title[Present Static Block]
-
-## Code Presenting
-## Static Source Blocks
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting) for details.</span>
-
-@fa[arrow-down]
-
-+++
-<p><span class="menu-title slide-title">Source: JavaScript Block</span></p>
-
-```javascript
-// Include http module.
-var http = require("http");
-
-// Create the server. Function passed as parameter
-// is called on every request made.
-http.createServer(function (request, response) {
-  // Attach listener on end event.  This event is
-  // called when client sent, awaiting response.
-  request.on("end", function () {
-    // Write headers to the response.
-    // HTTP 200 status, Content-Type text/plain.
-    response.writeHead(200, {
-      'Content-Type': 'text/plain'
-    });
-    // Send data and end response.
-    response.end('Hello HTTP!');
-  });
-
-// Listen on the 8080 port.
-}).listen(8080);
-```
-
-@[1,2](You can present code inlined within your slide markdown too.)
-@[9-17](Displayed using code-syntax highlighting just like your IDE.)
-@[19-20](Again, all of this without ever leaving your slideshow.)
-
----
-@title[Present GIST]
-
-## Code Presenting
-## GitHub GIST
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See [GitPitch Wiki](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting) for details.</span>
-
-@fa[arrow-down]
-
-+++?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=Scala&title=Source: Scala GIST
-
-@[23](You can even present code found within any GitHub GIST.)
-@[41-53](GIST source code is beautifully rendered on any slide.)
-@[57-62](Code-presenting works seamlessly both online and offline.)
+@[1](Api version)
+@[2](Resource type)
+@[4-7](Metadata: name/labels.)
+@[10-13](Container specification)
 
 ---
 @title[Embed Images]
